@@ -3,7 +3,10 @@
 //tarea para que sirven:
 //UseReducer, useCallback, useMemo,suseRef,UseImperativeHandle
 //useLayoutEffect, useInsertionEffect
-import { useCart } from "../hooks/useCarts";
+// import { useCart } from "../hooks/useCarts";
+import type { HeaderProps} from "../types/index";
+
+
 
 
 function Header({  cart,
@@ -12,7 +15,7 @@ function Header({  cart,
   RemoveFromCart,
   disminuirCantidad,
   aumentarCantidad,
-  isEmpty,}) {
+  isEmpty,}: HeaderProps) {
   // const { total,
   //       clearCart,
   //       RemoveFromCart,

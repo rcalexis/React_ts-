@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import * as styles from './index.css'
+import './index.css'
 //TAREA RESOVER EL ERROR DE CSS 
 import App from './App.js'
 

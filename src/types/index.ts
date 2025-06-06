@@ -12,11 +12,27 @@ guitar: Guitar,
 addToCart: (item: Guitar) => void
 }
 
+
+
 export type cartItem = Omit<Guitar, "description"> & {
     quantity: number,
 }
 
 
+export type GuitarID = Pick<Guitar, "id">
+
+
+export type HeaderProps ={
+  cart: cartItem []
+  isEmpty: boolean
+  aumentarCantidad: (id:GuitarID  ['id']) => void
+  disminuirCantidad : (id:GuitarID  ['id']) => void
+  clearCart : ()=>void
+  RemoveFromCart : (id:GuitarID  ['id']) => void
+  total:number
+
+
+}
 
 //  usar este types en cart 
 
